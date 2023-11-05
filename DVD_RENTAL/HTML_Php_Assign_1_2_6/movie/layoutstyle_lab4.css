@@ -1,0 +1,231 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: poppins;
+	background-image: url("bgimg.jpg");
+	background-repeat: no-repeat center fixed;
+  	background-size: 100% 100%;
+}
+*{
+	box-sizing: border-box;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	border: 1px solid rgba(0,0,0,0.04);
+	background-color: lightcoral;
+	position:fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+.logo img{
+	height: 55px;
+}
+nav .menu{
+	display: flex;
+}
+nav .menu li a{
+	height: 40px;
+	line-height: 43px;
+	margin: 0px;
+	padding: 0px 22px;
+	display: flex;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: black;
+	letter-spacing: 1px;
+}
+nav .menu li a:hover{
+	background-color: #242424;
+	color: #ffffff;
+	box-shadow: 5px 10px 30px rgba(53,53,53,0.1);
+	transition: all ease 0.2s;
+}
+#main{
+	clear: right;
+	float: right;
+	width: 80%;
+	padding-top: 80px;
+	margin: 0 0 0 4%;
+	display: incline;
+	font-family: courier;
+	font-size: 15pt;
+}
+.showcase-title{
+	padding-left: 30px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 2.0rem;
+	color: #1a1a1a;
+}
+.showcase-content{
+	width: 1000px;
+	height: 600px;
+	background-color: #ffffff;
+	box-shadow: 5px 15px 30px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	margin: 0px 20px 10px 20px;
+	overflow: hidden;
+}
+.showcase-content img{
+	width: 100%;
+	height:100%;
+	object-fit: cover;
+	object-position:top;
+}
+.row{
+  display: flex;
+}
+.column{
+  flex: 33.33%;
+  padding: 5px;
+}
+fieldset{
+	width: 1000px;
+	text-align: center;
+	background-color: #eee8aa;
+}
+legend{
+	background-color: gray;
+	color: white;
+    padding: 5px 10px;
+}
+
+input[type=text]{
+ 	width: 400px;
+  	padding: 12px 20px;
+  	margin: 8px 0;
+  	box-sizing: border-box;
+  	border: none;
+  	background-color: white;
+  	color: black;
+}
+input[type=number]{
+ 	width: 400px;
+  	padding: 12px 20px;
+  	margin: 8px 0;
+  	box-sizing: border-box;
+  	border: none;
+  	background-color: white;
+  	color: black;
+}
+
+/*home button*/
+.home_button{
+  background-color: DodgerBlue; 
+  border: none; 
+  color: white; 
+  padding: 12px 16px; 
+  font-size: 16px; 
+  cursor: pointer;
+}
+.home_button:hover{
+  background-color: RoyalBlue;
+} 
+
+/*button for ADD*/
+.button{
+	background-color: #4CAF50; /* Green */
+  	color: white;
+  	padding: 12px 32px;
+	border-radius:12px;
+  	text-align: center;
+  	text-decoration: none;
+	transition-duration: 0.4s;
+  	display: inline-block;
+  	font-size: 16px;
+  	margin: 4px 2px;
+  	cursor: pointer;
+}
+.button:after{
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+.button:active:after{
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+/*button for CLEAR*/
+.button2{
+	background-color: #f44336; /* Red */
+  	color: white;
+  	padding: 12px 32px;
+	border-radius:12px;
+  	text-align: center;
+  	text-decoration: none;
+	transition-duration: 0.4s;
+  	display: inline-block;
+  	font-size: 16px;
+  	margin: 4px 2px;
+  	cursor: pointer;
+}
+.button2:after{
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+.button2:active:after{
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+/*-------TABLE------*/
+table{
+	border:1px solid black; 
+	width:1200px; 
+	text-align:center; 
+	background-color:#EEE8AA;
+}
+table th{
+	background-color:grey; 
+	height:50; 
+	font-size: 30px;
+}
+table td{
+	font-weight:900;
+	font-size:17px;
+}
+#footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background: lightcoral;
+	padding: 5px;
+	font-size: 20pt;
+	font-family: courier;
+	font-weight: bold;
+}
+
+
